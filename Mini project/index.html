@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore With Mahi</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+ <script src="js/jquery.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+    <style>
+      body, html{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      .bg-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .item{
+      height: 700px;
+      object-fit: cover;
+    }
+    .header_part{
+            background-color: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(5px);
+            display: flex;
+            margin-top: 15px;
+        }
+        .logo{
+            display: flex;
+      justify-content: left;
+        }
+        .right_side{
+            flex: 1;
+        }
+        .header{
+            text-align: center;
+            font-size: 30px;
+            font-family:serif;
+            height: 50%;
+            color: red;
+            font-weight: bold;
+        }
+        .marquee{
+            text-align: center;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 50%;
+            color: blue;
+            font-weight:bold;
+        }
+        .navbar-nav > li > a {
+          font-size: 15px;
+          margin-right:15px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav > li > a:hover {
+  padding: 15px 20px;
+  border: 2px solid red;
+  animation: background 2s infinite;
+  border-radius: 5px;
+  color: black;
+}
+@keyframes background {
+  0%   { background-color: red; }
+  25%  { background-color: orange; }
+  50%  { background-color: yellow; }
+  75%  { background-color: green; }
+  100% { background-color: red; }
+}
+.navbar{
+   background-color: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(4px);
+}
+.navbar-toggle .icon-bar{
+  background-color: black;
+  border: 1px solid;
+}
+.navbar-toggle > li > a:hover {
+  padding: 15px 25px;
+  border: 2px solid red;
+  animation: background 2s infinite;
+  border-radius: 5px;
+  color: black;
+}
+.bg_img {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  background-attachment: fixed;
+}
+.plan{
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.card{
+      padding: 3px;
+      margin:5%;
+      background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+      border-radius:10px;
+      border-style: groove;
+  }
+  .img{
+    height:80px;
+      width:80px;
+      border-radius:10px;
+  }
+  .card:hover{
+        transform:scale(1.1);
+        border-color: blue;
+           border-radius: 12px;
+           box-shadow: 0 0 10px blue;
+       }
+       .card2{
+      padding: 3px;
+      margin:5%;
+      background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+      border-radius:10px;
+      border-style: groove;
+  }
+  .card2:hover{
+        transform:scale(1.1);
+        border-color: gold;
+           border-radius: 12px;
+           box-shadow: 0 0 10px gold;
+       }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+     <div class="header_part">
+         <div class="logo">
+              <img src="logo.jpeg" alt="E W M logo" style="width:100px; height:120px;">
+         </div>
+         <div class="right_side">
+             <div class="header">
+                   Explore With Mahi
+             </div>
+                <div class="marquee"><marquee behavior="scroll" direction="left" scrollamount="13" loop="infinite">
+                      Safar sirf aapka hi nhi,hamara bhi hai.To phir chalein kahin door..... sath milkar!!</marquee>
+                </div>
+         </div>
+     </div>
+     <div class="navbar">
+<nav class="navbar navbar-inverse>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">HOME</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="Destination.html">Destinations</a></li>
+        <li><a href="Tour_packege.html">Tour Pakage</a></li>
+        <li><a href="Gallary.html">Gallary</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="Music.html">MUSIC</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+    </div>
+
+ <div class="bg-video">
+
+    <div id="videoCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+  <div class="carousel-inner">
+    <div class="item active" >
+      <div class="item">
+      <video width="100%" autoplay muted loop controls>
+        <source src="fort.mp4" type="video/mp4">
+      </video>
+      
+      <div class="carousel-caption">
+        <h4 style="color: red; font-size: 25px;">Fort :a symbol of Rajput pride and bravery.
+Witness centuries of history, stunning architecture, and legendary tales come alive</h4>
+      </div>
+      </div>
+    </div>
+   <div class="item">
+      <video width="100%" autoplay muted loop controls>
+        <source src="mountain.mp4" type="video/mp4">
+      </video>
+      <div class="carousel-caption">
+        <h4 style="color: red; font-size: 25px;">Mountain: Discover the serenity of majestic mountains, where nature touches the sky.
+Perfect for adventure, peace, and breathtaking views that stay with you forever.</h4>
+      </div>
+    </div>
+    <div class="item">
+      <video width="100%" autoplay muted loop controls>
+        <source src="waterfall.mp4" type="video/mp4">
+      </video>
+      <div class="carousel-caption">
+        <h4 style="color: red; font-size: 25px;">Waterfall and rivers:Feel the power and beauty of nature with breathtaking waterfalls and flowing rivers.
+Perfect spots for relaxation, adventure, and unforgettable moments in the wild.</h4>
+      </div>
+    </div>
+    <div class="item">
+      <video width="100%" autoplay loop muted controls>
+        <source src="snow.mp4" type="video/mp4">
+      </video>
+      <div class="carousel-caption">
+        <h4 style="color: red; font-size: 25px;">Snow:Step into the magical snow lands, where every view feels like a dream.
+Experience snowfall, thrilling adventures, and the chill of paradise on Earth.</h4>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#videoCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#videoCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+<div class="bg_img" style="background-image: url('home.jpeg'); height:auto;">
+  <div class="plan">
+      <h2 style="font-size: 60px; color: orange; justify-content: center; font-family:serif;">Let's Make your travel plan </h2>
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="card">
+  <h2>rafting</h2>
+  <img class="img" src="raf.jpeg" alt="Rafting">
+  <p>29+packege<p>
+  </div>
+    </div>
+  <div class="col-sm-3">
+  <div class="card">
+  <h2>Forest</h2>
+  <img class="img" src="forest.jpeg" alt="Forest">
+  <p>34+packege<p>
+  </div>
+  </div>
+  <div class="col-sm-3">
+  <div class="card">
+  <h2>Temple</h2>
+  <img class="img" src="temple.jpeg" alt="Temple">
+  <p>55+packege<p>
+  </div>
+  </div>
+  <div class="col-sm-3">
+  <div class="card">
+  <h2>Beach</h2>
+  <img class="img" src="beach.jpeg" alt="Beach">
+  <p>25+packege<p>
+  </div>
+  </div>
+  </div>
+  </div>
+<div class="2025">
+      <h2 style="font-size: 60px; color: red; justify-content: center; font-family:serif;">Top Trending Travel Destination in India in 2025</h2>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="card2">
+  <img class="img" src="shilong.jpeg" alt="Meghalaya">
+  <h2>Meghalaya</h2>
+  <p>25+packege<p>
+  </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card2">
+  <img class="img" src="ladakh.jpeg" alt="Ladakh">
+  <h2>Ladakh</h2>
+  <p>18+packege<p>
+  </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card2">
+  <img class="img" src="a & n.jpeg" alt="A & N island ">
+  <h2>A & N island</h2>
+  <p>30+packege<p>
+  </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card2">
+  <img class="img" src="coorg.jpeg" alt="Karnataka">
+  <h2>(Karnataka)</h2>
+  <p>23+packege<p>
+  </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card2">
+  <img class="img" src="udaipur.jpeg" alt="Udaipur">
+  <h2>Udaipur</h2>
+  <p>50+packege<p>
+  </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card2">
+  <img class="img" src="aayodhya.jpeg" alt="ram mandir">
+  <h2>ram mandir</h2>
+  <p>25+packege<p>
+  </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card2">
+  <img class="img" src="rishikesh.jpeg" alt="Rishikesh">
+  <h2>Rishikesh</h2>
+  <p>35+packege<p>
+  </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card2">
+  <img class="img" src="goa.jpeg" alt="GOA">
+  <h2>GOA</h2>
+  <p>45+packege<p>
+  </div>
+    </div>
+    
+    
+  </div>
+  </div>
+  <div class="state">
+      <h2 style="font-size: 60px; color: blue; justify-content: center; font-family:serif;">Explore Top 5 State in india</h2>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="card">
+  <img class="img" src="raj.jpeg" alt="Rajsthan">
+  <h2>Rajsthan</h2>
+  <p>65+packege<p>
+  </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+  <img class="img" src="kerala.jpeg" alt="Kerala">
+  <h2>Kerala</h2>
+  <p>35+packege<p>
+  </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+  <img class="img" src="H M.jpeg" alt="Himachal Pradesh">
+  <h2>Himachal Pradesh</h2>
+  <p>55+packege<p>
+  </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+  <img class="img" src="uttrakhand.jpeg" alt="Uttrakhand">
+  <h2>Uttrakhand</h2>
+  <p>46+packege<p>
+  </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+  <img class="img" src="goa.jpeg" alt="Goa">
+  <h2>Goa</h2>
+  <p>25+packege<p>
+  </div>
+    </div>
+</div>
+</div>
+  </div>
+</div>
+ </div>
+</body>
+</html>
